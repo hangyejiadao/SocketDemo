@@ -1,0 +1,10 @@
+E:\Github\SocketDemo\Client\Client\bin\Debug\Client.exe.config
+E:\Github\SocketDemo\Client\Client\bin\Debug\Client.exe
+E:\Github\SocketDemo\Client\Client\bin\Debug\Client.pdb
+E:\Github\SocketDemo\Client\Client\obj\Debug\Client.Form1.resources
+E:\Github\SocketDemo\Client\Client\obj\Debug\Client.Properties.Resources.resources
+E:\Github\SocketDemo\Client\Client\obj\Debug\Client.csproj.GenerateResource.Cache
+E:\Github\SocketDemo\Client\Client\obj\Debug\Client.csproj.CoreCompileInputs.cache
+E:\Github\SocketDemo\Client\Client\obj\Debug\Client.exe
+E:\Github\SocketDemo\Client\Client\obj\Debug\Client.pdb
+E:\Github\SocketDemo\Client\Client\obj\Debug\Client.csprojResolveAssemblyReference.cache
