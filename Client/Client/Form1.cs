@@ -40,7 +40,7 @@ namespace Client
 
         private void btnStop_Click(object sender, EventArgs e)
         {
-            socket.Disconnect(true);
+            socket.Dispose();
         }
 
         private void btnConnect_Click(object sender, EventArgs e)
