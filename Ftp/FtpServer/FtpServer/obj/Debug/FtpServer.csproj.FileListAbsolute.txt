@@ -1,0 +1,9 @@
+E:\Github\SocketDemo\Ftp\FtpServer\FtpServer\bin\Debug\FtpServer.exe.config
+E:\Github\SocketDemo\Ftp\FtpServer\FtpServer\bin\Debug\FtpServer.exe
+E:\Github\SocketDemo\Ftp\FtpServer\FtpServer\bin\Debug\FtpServer.pdb
+E:\Github\SocketDemo\Ftp\FtpServer\FtpServer\obj\Debug\FtpServer.csprojResolveAssemblyReference.cache
+E:\Github\SocketDemo\Ftp\FtpServer\FtpServer\obj\Debug\FtpServer.Form1.resources
+E:\Github\SocketDemo\Ftp\FtpServer\FtpServer\obj\Debug\FtpServer.Properties.Resources.resources
+E:\Github\SocketDemo\Ftp\FtpServer\FtpServer\obj\Debug\FtpServer.csproj.GenerateResource.Cache
+E:\Github\SocketDemo\Ftp\FtpServer\FtpServer\obj\Debug\FtpServer.exe
+E:\Github\SocketDemo\Ftp\FtpServer\FtpServer\obj\Debug\FtpServer.pdb
