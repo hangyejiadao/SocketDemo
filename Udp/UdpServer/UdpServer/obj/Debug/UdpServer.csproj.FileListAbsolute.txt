@@ -1,0 +1,1 @@
+E:\Github\SocketDemo\Udp\UdpServer\UdpServer\bin\Debug\UdpServer.exe.config
