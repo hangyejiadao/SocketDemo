@@ -63,6 +63,7 @@ namespace FtpServer
                 if (newClient.Connected)
                 {
                     Thread thread = new Thread(new ThreadStart(round));
+                    thread.IsBackground = true;
                     thread.Start();
                 }
             }
