@@ -30,18 +30,18 @@
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtServerHost = new System.Windows.Forms.TextBox();
+            this.txtPort = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btnConnect = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtFileList = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnGetFileList = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.label5 = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
@@ -57,9 +57,9 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.textBox2);
+            this.groupBox1.Controls.Add(this.txtPort);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.txtServerHost);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(29, 25);
             this.groupBox1.Name = "groupBox1";
@@ -77,19 +77,19 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "服务器名称:";
             // 
-            // textBox1
+            // txtServerHost
             // 
-            this.textBox1.Location = new System.Drawing.Point(99, 35);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(372, 21);
-            this.textBox1.TabIndex = 1;
+            this.txtServerHost.Location = new System.Drawing.Point(99, 35);
+            this.txtServerHost.Name = "txtServerHost";
+            this.txtServerHost.Size = new System.Drawing.Size(372, 21);
+            this.txtServerHost.TabIndex = 1;
             // 
-            // textBox2
+            // txtPort
             // 
-            this.textBox2.Location = new System.Drawing.Point(99, 113);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(372, 21);
-            this.textBox2.TabIndex = 3;
+            this.txtPort.Location = new System.Drawing.Point(99, 113);
+            this.txtPort.Name = "txtPort";
+            this.txtPort.Size = new System.Drawing.Size(372, 21);
+            this.txtPort.TabIndex = 3;
             // 
             // label2
             // 
@@ -119,6 +119,7 @@
             this.btnConnect.TabIndex = 0;
             this.btnConnect.Text = "连接";
             this.btnConnect.UseVisualStyleBackColor = true;
+            this.btnConnect.Click += new System.EventHandler(this.btnConnect_Click);
             // 
             // btnClose
             // 
@@ -131,10 +132,10 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.button1);
+            this.groupBox3.Controls.Add(this.btnGetFileList);
             this.groupBox3.Controls.Add(this.textBox4);
             this.groupBox3.Controls.Add(this.label4);
-            this.groupBox3.Controls.Add(this.textBox3);
+            this.groupBox3.Controls.Add(this.txtFileList);
             this.groupBox3.Controls.Add(this.label3);
             this.groupBox3.Location = new System.Drawing.Point(29, 220);
             this.groupBox3.Name = "groupBox3";
@@ -152,13 +153,13 @@
             this.label3.TabIndex = 0;
             this.label3.Text = "服务器文件列表:";
             // 
-            // textBox3
+            // txtFileList
             // 
-            this.textBox3.Location = new System.Drawing.Point(134, 34);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(453, 93);
-            this.textBox3.TabIndex = 1;
+            this.txtFileList.Location = new System.Drawing.Point(134, 34);
+            this.txtFileList.Multiline = true;
+            this.txtFileList.Name = "txtFileList";
+            this.txtFileList.Size = new System.Drawing.Size(453, 93);
+            this.txtFileList.TabIndex = 1;
             // 
             // label4
             // 
@@ -176,14 +177,14 @@
             this.textBox4.Size = new System.Drawing.Size(365, 21);
             this.textBox4.TabIndex = 3;
             // 
-            // button1
+            // btnGetFileList
             // 
-            this.button1.Location = new System.Drawing.Point(515, 140);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(165, 47);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "获取文件列表";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnGetFileList.Location = new System.Drawing.Point(515, 140);
+            this.btnGetFileList.Name = "btnGetFileList";
+            this.btnGetFileList.Size = new System.Drawing.Size(165, 47);
+            this.btnGetFileList.TabIndex = 4;
+            this.btnGetFileList.Text = "获取文件列表";
+            this.btnGetFileList.UseVisualStyleBackColor = true;
             // 
             // groupBox4
             // 
@@ -275,18 +276,18 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtPort;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtServerHost;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Button btnConnect;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnGetFileList;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtFileList;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.TextBox textBox6;
