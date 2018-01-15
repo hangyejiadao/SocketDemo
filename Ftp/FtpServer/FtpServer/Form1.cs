@@ -114,7 +114,10 @@ namespace FtpServer
                     else
                     {
                         parameter = "";
-                        txtClientMsg.AppendText("command=" + command + "," + "parameter=" + parameter + "\r\n");
+                        Invoke(new Action(() =>
+                        {
+                            txtClientMsg.AppendText("command=" + command + "," + "parameter=" + parameter + "\r\n");
+                        }));  
                         commMessage.Remove(0, commMessage.Length);
                         if (command == "list")
                         {
