@@ -7,3 +7,4 @@ E:\Github\SocketDemo\Ftp\FtpServer\FtpServer\obj\Debug\FtpServer.Properties.Reso
 E:\Github\SocketDemo\Ftp\FtpServer\FtpServer\obj\Debug\FtpServer.csproj.GenerateResource.Cache
 E:\Github\SocketDemo\Ftp\FtpServer\FtpServer\obj\Debug\FtpServer.exe
 E:\Github\SocketDemo\Ftp\FtpServer\FtpServer\obj\Debug\FtpServer.pdb
+E:\Github\SocketDemo\Ftp\FtpServer\FtpServer\obj\Debug\FtpServer.csproj.CoreCompileInputs.cache

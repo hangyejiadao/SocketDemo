@@ -48,6 +48,8 @@ namespace FtpServer
                 listener.Start();
                 Thread thread = new Thread(new ThreadStart(receive));
                 thread.Start();
+                btnStartService.Enabled = false;
+                btnStopService.Enabled = true;
             }
             catch (Exception exception)
             {
@@ -74,6 +76,8 @@ namespace FtpServer
             try
             {
                 listener.Stop();
+                btnStartService.Enabled = true;
+                btnStopService.Enabled = false;
             }
             catch  
             {

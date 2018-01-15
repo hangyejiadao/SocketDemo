@@ -39,41 +39,46 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(45, 46);
+            this.label1.Location = new System.Drawing.Point(60, 58);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(59, 12);
+            this.label1.Size = new System.Drawing.Size(75, 15);
             this.label1.TabIndex = 0;
             this.label1.Text = "监听端口:";
             // 
             // txtPort
             // 
-            this.txtPort.Location = new System.Drawing.Point(111, 46);
+            this.txtPort.Location = new System.Drawing.Point(148, 58);
+            this.txtPort.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtPort.Name = "txtPort";
-            this.txtPort.Size = new System.Drawing.Size(102, 21);
+            this.txtPort.Size = new System.Drawing.Size(135, 25);
             this.txtPort.TabIndex = 1;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(45, 125);
+            this.label2.Location = new System.Drawing.Point(60, 156);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(59, 12);
+            this.label2.Size = new System.Drawing.Size(75, 15);
             this.label2.TabIndex = 2;
             this.label2.Text = "客户信息:";
             // 
             // txtClientMsg
             // 
-            this.txtClientMsg.Location = new System.Drawing.Point(111, 125);
+            this.txtClientMsg.Location = new System.Drawing.Point(148, 156);
+            this.txtClientMsg.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtClientMsg.Multiline = true;
             this.txtClientMsg.Name = "txtClientMsg";
-            this.txtClientMsg.Size = new System.Drawing.Size(390, 228);
+            this.txtClientMsg.Size = new System.Drawing.Size(519, 284);
             this.txtClientMsg.TabIndex = 3;
             // 
             // btnStartService
             // 
-            this.btnStartService.Location = new System.Drawing.Point(111, 389);
+            this.btnStartService.Location = new System.Drawing.Point(148, 486);
+            this.btnStartService.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnStartService.Name = "btnStartService";
-            this.btnStartService.Size = new System.Drawing.Size(75, 23);
+            this.btnStartService.Size = new System.Drawing.Size(100, 29);
             this.btnStartService.TabIndex = 4;
             this.btnStartService.Text = "开始服务";
             this.btnStartService.UseVisualStyleBackColor = true;
@@ -81,9 +86,11 @@
             // 
             // btnStopService
             // 
-            this.btnStopService.Location = new System.Drawing.Point(426, 389);
+            this.btnStopService.Enabled = false;
+            this.btnStopService.Location = new System.Drawing.Point(568, 486);
+            this.btnStopService.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnStopService.Name = "btnStopService";
-            this.btnStopService.Size = new System.Drawing.Size(75, 23);
+            this.btnStopService.Size = new System.Drawing.Size(100, 29);
             this.btnStopService.TabIndex = 5;
             this.btnStopService.Text = "关闭服务";
             this.btnStopService.UseVisualStyleBackColor = true;
@@ -91,15 +98,16 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(543, 424);
+            this.ClientSize = new System.Drawing.Size(724, 530);
             this.Controls.Add(this.btnStopService);
             this.Controls.Add(this.btnStartService);
             this.Controls.Add(this.txtClientMsg);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtPort);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
