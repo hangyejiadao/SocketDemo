@@ -38,7 +38,7 @@
             this.btnConnect = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.btnGetFileList = new System.Windows.Forms.Button();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtInputFile = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtFileList = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -46,11 +46,12 @@
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.btnDownload = new System.Windows.Forms.Button();
+            this.txtPathAndFileName = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.rtbState = new System.Windows.Forms.RichTextBox();
+            this.saveFileDialog = new System.Windows.Forms.SaveFileDialog();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -122,6 +123,7 @@
             this.btnClose.TabIndex = 1;
             this.btnClose.Text = "关闭连接";
             this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // btnConnect
             // 
@@ -136,7 +138,7 @@
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.btnGetFileList);
-            this.groupBox3.Controls.Add(this.textBox4);
+            this.groupBox3.Controls.Add(this.txtInputFile);
             this.groupBox3.Controls.Add(this.label4);
             this.groupBox3.Controls.Add(this.txtFileList);
             this.groupBox3.Controls.Add(this.label3);
@@ -155,13 +157,14 @@
             this.btnGetFileList.TabIndex = 4;
             this.btnGetFileList.Text = "获取文件列表";
             this.btnGetFileList.UseVisualStyleBackColor = true;
+            this.btnGetFileList.Click += new System.EventHandler(this.btnGetFileList_Click);
             // 
-            // textBox4
+            // txtInputFile
             // 
-            this.textBox4.Location = new System.Drawing.Point(134, 142);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(365, 21);
-            this.textBox4.TabIndex = 3;
+            this.txtInputFile.Location = new System.Drawing.Point(134, 142);
+            this.txtInputFile.Name = "txtInputFile";
+            this.txtInputFile.Size = new System.Drawing.Size(365, 21);
+            this.txtInputFile.TabIndex = 3;
             // 
             // label4
             // 
@@ -194,8 +197,8 @@
             this.groupBox4.Controls.Add(this.textBox6);
             this.groupBox4.Controls.Add(this.label6);
             this.groupBox4.Controls.Add(this.button3);
-            this.groupBox4.Controls.Add(this.button2);
-            this.groupBox4.Controls.Add(this.textBox5);
+            this.groupBox4.Controls.Add(this.btnDownload);
+            this.groupBox4.Controls.Add(this.txtPathAndFileName);
             this.groupBox4.Controls.Add(this.label5);
             this.groupBox4.Location = new System.Drawing.Point(29, 278);
             this.groupBox4.Name = "groupBox4";
@@ -230,22 +233,22 @@
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // button2
+            // btnDownload
             // 
-            this.button2.Location = new System.Drawing.Point(113, 73);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "下载";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btnDownload.Location = new System.Drawing.Point(113, 73);
+            this.btnDownload.Name = "btnDownload";
+            this.btnDownload.Size = new System.Drawing.Size(75, 23);
+            this.btnDownload.TabIndex = 2;
+            this.btnDownload.Text = "下载";
+            this.btnDownload.UseVisualStyleBackColor = true;
+            this.btnDownload.Click += new System.EventHandler(this.btnDownload_Click);
             // 
-            // textBox5
+            // txtPathAndFileName
             // 
-            this.textBox5.Location = new System.Drawing.Point(113, 33);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(509, 21);
-            this.textBox5.TabIndex = 1;
+            this.txtPathAndFileName.Location = new System.Drawing.Point(113, 33);
+            this.txtPathAndFileName.Name = "txtPathAndFileName";
+            this.txtPathAndFileName.Size = new System.Drawing.Size(509, 21);
+            this.txtPathAndFileName.TabIndex = 1;
             // 
             // label5
             // 
@@ -312,7 +315,7 @@
         private System.Windows.Forms.Button btnConnect;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Button btnGetFileList;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtInputFile;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtFileList;
         private System.Windows.Forms.Label label3;
@@ -320,11 +323,12 @@
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.Button btnDownload;
+        private System.Windows.Forms.TextBox txtPathAndFileName;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.RichTextBox rtbState;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog;
     }
 }
 
