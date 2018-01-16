@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Net;
 using System.Net.Sockets;
 using System.Text;
 using System.Threading;
@@ -44,10 +45,13 @@ namespace FtpServer
             }
             try
             {
-                listener = new TcpListener(port);
+                listener = new TcpListener(IPAddress.Parse(txtHost.Text),port);
                 listener.Start();
                 Thread thread = new Thread(new ThreadStart(receive));
+                thread.IsBackground = true;
                 thread.Start();
+                btnStartService.Enabled = false;
+                btnStopService.Enabled = true;
             }
             catch (Exception exception)
             {
@@ -100,7 +104,7 @@ namespace FtpServer
                 else
                 {
                     commMessage = commMessage.Substring(0, x);
-                    command = command.ToLower();
+                    command = commMessage.ToLower();
                     if (y != -1)
                     {
                         parameter = commMessage.Substring(y + 1, x - y - 1);
@@ -109,7 +113,10 @@ namespace FtpServer
                     else
                     {
                         parameter = "";
-                        txtClientMsg.AppendText("command=" + command + "," + "parameter=" + parameter + "\r\n");
+                        Invoke(new Action(() =>
+                        {
+                            txtClientMsg.AppendText("command=" + command + "  ,  " + "parameter=   " + parameter + "  \r\n");
+                        }));  
                         commMessage.Remove(0, commMessage.Length);
                         if (command == "list")
                         {
@@ -221,8 +228,7 @@ namespace FtpServer
                         {
                             try
                             {
-                                WriteToNetStream(ref netStream,
-                                    "215 the FTP system ready,it can the command such as LIST,PORT,PASV,RETR,HELP,QUIT.Before PORT command,PASV command fistly.we are sorry that the ftp system cant other command");
+                                WriteToNetStream(ref netStream,  "215 the FTP system ready,it can the command such as LIST,PORT,PASV,RETR,HELP,QUIT.Before PORT command,PASV command fistly.we are sorry that the ftp system cant other command");
 
                             }
                             catch (Exception e)
@@ -288,6 +294,11 @@ namespace FtpServer
             byte[] arrayToSend = System.Text.Encoding.BigEndianUnicode.GetBytes(stringToSend.ToCharArray());
             netStream.Write(arrayToSend, 0, arrayToSend.Length);
             netStream.Flush();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            btnStopService.Enabled = false;
         }
 
         
