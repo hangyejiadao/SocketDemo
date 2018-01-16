@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
+using System.Net;
 using System.Net.Sockets;
 using System.Text;
 using System.Threading.Tasks;
@@ -18,8 +20,35 @@ namespace FtpClient
             InitializeComponent();
         }
 
+        private TcpClient client;
+        private NetworkStream netStream;
+        private FileStream fileStream = null;
         private void btnConnect_Click(object sender, EventArgs e)
         {
+            client = new TcpClient();
+            int port = 0;
+            try
+            {
+                port = Int32.Parse(txtPort.Text);
+            }
+            catch (Exception exception)
+            {
+                MessageBox.Show("请输入整数.");
+            }
+            try
+            {
+                client.Connect(IPAddress.Parse(txtServerHost.Text), port);
+                netStream = client.GetStream();
+                string Msg = ReadFormNetStream(ref netStream);
+                rtbState.AppendText(Msg);
+                btnConnect.Enabled = false;
+                btnClose.Enabled = true;
+
+            }
+            catch (Exception exception)
+            {
+                Log.Write(exception.Message);
+            }
 
         }
 
@@ -27,7 +56,7 @@ namespace FtpClient
         {
             //获取服务器网络流
             string downString = "retr";
-            
+
         }
 
         private void WriteToNetStream(ref NetworkStream NetStream, string sendMessage)
@@ -56,7 +85,7 @@ namespace FtpClient
 
         private bool checkFeedback(string strMessage, string check)
         {
-            if (strMessage.IndexOf(check)!=-1)
+            if (strMessage.IndexOf(check) != -1)
             {
                 return true;
             }
@@ -74,6 +103,12 @@ namespace FtpClient
         private void button3_Click(object sender, EventArgs e)
         {
 
+        }
+
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            btnClose.Enabled = false;
         }
     }
 }
