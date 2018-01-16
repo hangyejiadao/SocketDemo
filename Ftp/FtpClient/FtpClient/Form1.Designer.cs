@@ -29,26 +29,26 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtServerHost = new System.Windows.Forms.TextBox();
             this.txtPort = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.txtServerHost = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.btnConnect = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
+            this.btnConnect = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtFileList = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
             this.btnGetFileList = new System.Windows.Forms.Button();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtFileList = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.label6 = new System.Windows.Forms.Label();
             this.textBox6 = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -68,22 +68,6 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "服务器";
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(21, 35);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(71, 12);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "服务器名称:";
-            // 
-            // txtServerHost
-            // 
-            this.txtServerHost.Location = new System.Drawing.Point(99, 35);
-            this.txtServerHost.Name = "txtServerHost";
-            this.txtServerHost.Size = new System.Drawing.Size(372, 21);
-            this.txtServerHost.TabIndex = 1;
-            // 
             // txtPort
             // 
             this.txtPort.Location = new System.Drawing.Point(99, 113);
@@ -100,6 +84,22 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "端口:";
             // 
+            // txtServerHost
+            // 
+            this.txtServerHost.Location = new System.Drawing.Point(99, 35);
+            this.txtServerHost.Name = "txtServerHost";
+            this.txtServerHost.Size = new System.Drawing.Size(372, 21);
+            this.txtServerHost.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(21, 35);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(71, 12);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "服务器名称:";
+            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.btnClose);
@@ -111,6 +111,15 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "连接";
             // 
+            // btnClose
+            // 
+            this.btnClose.Location = new System.Drawing.Point(32, 90);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(128, 27);
+            this.btnClose.TabIndex = 1;
+            this.btnClose.Text = "关闭连接";
+            this.btnClose.UseVisualStyleBackColor = true;
+            // 
             // btnConnect
             // 
             this.btnConnect.Location = new System.Drawing.Point(32, 33);
@@ -120,15 +129,6 @@
             this.btnConnect.Text = "连接";
             this.btnConnect.UseVisualStyleBackColor = true;
             this.btnConnect.Click += new System.EventHandler(this.btnConnect_Click);
-            // 
-            // btnClose
-            // 
-            this.btnClose.Location = new System.Drawing.Point(32, 90);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(128, 27);
-            this.btnClose.TabIndex = 1;
-            this.btnClose.Text = "关闭连接";
-            this.btnClose.UseVisualStyleBackColor = true;
             // 
             // groupBox3
             // 
@@ -144,22 +144,21 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "服务器文件列表";
             // 
-            // label3
+            // btnGetFileList
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(23, 34);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(95, 12);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "服务器文件列表:";
+            this.btnGetFileList.Location = new System.Drawing.Point(515, 140);
+            this.btnGetFileList.Name = "btnGetFileList";
+            this.btnGetFileList.Size = new System.Drawing.Size(165, 47);
+            this.btnGetFileList.TabIndex = 4;
+            this.btnGetFileList.Text = "获取文件列表";
+            this.btnGetFileList.UseVisualStyleBackColor = true;
             // 
-            // txtFileList
+            // textBox4
             // 
-            this.txtFileList.Location = new System.Drawing.Point(134, 34);
-            this.txtFileList.Multiline = true;
-            this.txtFileList.Name = "txtFileList";
-            this.txtFileList.Size = new System.Drawing.Size(453, 93);
-            this.txtFileList.TabIndex = 1;
+            this.textBox4.Location = new System.Drawing.Point(134, 142);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(365, 21);
+            this.textBox4.TabIndex = 3;
             // 
             // label4
             // 
@@ -170,21 +169,22 @@
             this.label4.TabIndex = 2;
             this.label4.Text = "输入路径:";
             // 
-            // textBox4
+            // txtFileList
             // 
-            this.textBox4.Location = new System.Drawing.Point(134, 142);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(365, 21);
-            this.textBox4.TabIndex = 3;
+            this.txtFileList.Location = new System.Drawing.Point(134, 34);
+            this.txtFileList.Multiline = true;
+            this.txtFileList.Name = "txtFileList";
+            this.txtFileList.Size = new System.Drawing.Size(453, 93);
+            this.txtFileList.TabIndex = 1;
             // 
-            // btnGetFileList
+            // label3
             // 
-            this.btnGetFileList.Location = new System.Drawing.Point(515, 140);
-            this.btnGetFileList.Name = "btnGetFileList";
-            this.btnGetFileList.Size = new System.Drawing.Size(165, 47);
-            this.btnGetFileList.TabIndex = 4;
-            this.btnGetFileList.Text = "获取文件列表";
-            this.btnGetFileList.UseVisualStyleBackColor = true;
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(23, 34);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(95, 12);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "服务器文件列表:";
             // 
             // groupBox4
             // 
@@ -201,21 +201,31 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "下载";
             // 
-            // label5
+            // textBox6
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(23, 33);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(83, 12);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "路径与文件名:";
+            this.textBox6.Location = new System.Drawing.Point(522, 73);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(100, 21);
+            this.textBox6.TabIndex = 5;
             // 
-            // textBox5
+            // label6
             // 
-            this.textBox5.Location = new System.Drawing.Point(113, 33);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(509, 21);
-            this.textBox5.TabIndex = 1;
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(444, 78);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(71, 12);
+            this.label6.TabIndex = 4;
+            this.label6.Text = "自定义端口:";
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(281, 73);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 3;
+            this.button3.Text = "自定义端口下载";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
@@ -227,30 +237,21 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button3
+            // textBox5
             // 
-            this.button3.Location = new System.Drawing.Point(281, 73);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "自定义端口下载";
-            this.button3.UseVisualStyleBackColor = true;
+            this.textBox5.Location = new System.Drawing.Point(113, 33);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(509, 21);
+            this.textBox5.TabIndex = 1;
             // 
-            // label6
+            // label5
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(444, 78);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(71, 12);
-            this.label6.TabIndex = 4;
-            this.label6.Text = "自定义端口:";
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(522, 73);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 21);
-            this.textBox6.TabIndex = 5;
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(23, 33);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(83, 12);
+            this.label5.TabIndex = 0;
+            this.label5.Text = "路径与文件名:";
             // 
             // Form1
             // 
