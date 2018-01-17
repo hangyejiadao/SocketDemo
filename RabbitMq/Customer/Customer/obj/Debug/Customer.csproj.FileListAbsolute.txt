@@ -1,0 +1,14 @@
+E:\Github\SocketDemo\RabbitMq\Customer\Customer\bin\Debug\Customer.exe.config
+E:\Github\SocketDemo\RabbitMq\Customer\Customer\bin\Debug\Customer.exe
+E:\Github\SocketDemo\RabbitMq\Customer\Customer\bin\Debug\Customer.pdb
+E:\Github\SocketDemo\RabbitMq\Customer\Customer\bin\Debug\Microsoft.Diagnostics.Tracing.EventSource.dll
+E:\Github\SocketDemo\RabbitMq\Customer\Customer\bin\Debug\RabbitMQ.Client.dll
+E:\Github\SocketDemo\RabbitMq\Customer\Customer\bin\Debug\Microsoft.Diagnostics.Tracing.EventSource.xml
+E:\Github\SocketDemo\RabbitMq\Customer\Customer\bin\Debug\RabbitMQ.Client.xml
+E:\Github\SocketDemo\RabbitMq\Customer\Customer\obj\Debug\Customer.csprojResolveAssemblyReference.cache
+E:\Github\SocketDemo\RabbitMq\Customer\Customer\obj\Debug\Customer.Form1.resources
+E:\Github\SocketDemo\RabbitMq\Customer\Customer\obj\Debug\Customer.Properties.Resources.resources
+E:\Github\SocketDemo\RabbitMq\Customer\Customer\obj\Debug\Customer.csproj.GenerateResource.Cache
+E:\Github\SocketDemo\RabbitMq\Customer\Customer\obj\Debug\Customer.csproj.CoreCompileInputs.cache
+E:\Github\SocketDemo\RabbitMq\Customer\Customer\obj\Debug\Customer.exe
+E:\Github\SocketDemo\RabbitMq\Customer\Customer\obj\Debug\Customer.pdb

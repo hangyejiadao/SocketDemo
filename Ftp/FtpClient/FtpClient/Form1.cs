@@ -70,5 +70,10 @@ namespace FtpClient
         {
 
         }
+
+        private void btnGetFileList_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

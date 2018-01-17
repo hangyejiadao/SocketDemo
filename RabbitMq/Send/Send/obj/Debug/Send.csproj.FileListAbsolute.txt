@@ -1,0 +1,14 @@
+E:\Github\SocketDemo\RabbitMq\Send\Send\bin\Debug\Send.exe.config
+E:\Github\SocketDemo\RabbitMq\Send\Send\bin\Debug\Send.exe
+E:\Github\SocketDemo\RabbitMq\Send\Send\bin\Debug\Send.pdb
+E:\Github\SocketDemo\RabbitMq\Send\Send\bin\Debug\Microsoft.Diagnostics.Tracing.EventSource.dll
+E:\Github\SocketDemo\RabbitMq\Send\Send\bin\Debug\RabbitMQ.Client.dll
+E:\Github\SocketDemo\RabbitMq\Send\Send\bin\Debug\Microsoft.Diagnostics.Tracing.EventSource.xml
+E:\Github\SocketDemo\RabbitMq\Send\Send\bin\Debug\RabbitMQ.Client.xml
+E:\Github\SocketDemo\RabbitMq\Send\Send\obj\Debug\Send.csprojResolveAssemblyReference.cache
+E:\Github\SocketDemo\RabbitMq\Send\Send\obj\Debug\Send.Form1.resources
+E:\Github\SocketDemo\RabbitMq\Send\Send\obj\Debug\Send.Properties.Resources.resources
+E:\Github\SocketDemo\RabbitMq\Send\Send\obj\Debug\Send.csproj.GenerateResource.Cache
+E:\Github\SocketDemo\RabbitMq\Send\Send\obj\Debug\Send.csproj.CoreCompileInputs.cache
+E:\Github\SocketDemo\RabbitMq\Send\Send\obj\Debug\Send.exe
+E:\Github\SocketDemo\RabbitMq\Send\Send\obj\Debug\Send.pdb
