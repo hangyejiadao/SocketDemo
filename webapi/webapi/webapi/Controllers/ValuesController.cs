@@ -1,19 +1,28 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
+using System.Text;
 using System.Web.Http;
 
 namespace webapi.Controllers
 {
-    [Authorize]
+
     public class ValuesController : ApiController
     {
+        private static int num = 0;
         // GET api/values
-        public IEnumerable<string> Get()
+        public string Get()
         {
-            return new string[] { "value1", "value2" };
+            string url = "http://localhost:2241/api/Values/Get";
+            Dictionary<string, dynamic> args = new Dictionary<string, dynamic>();
+            args.Add("value", "daf");
+            num++;
+            Debug.Write(num);
+            HttpHelper.Request(url, null, Encoding.UTF8, null, HttpMethod.GET);
+            return num.ToString();
         }
 
         // GET api/values/5
