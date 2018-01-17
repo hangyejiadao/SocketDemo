@@ -34,13 +34,19 @@
             this.txtClientMsg = new System.Windows.Forms.TextBox();
             this.btnStartService = new System.Windows.Forms.Button();
             this.btnStopService = new System.Windows.Forms.Button();
+            this.txtHost = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+<<<<<<< HEAD
             this.label1.Location = new System.Drawing.Point(60, 58);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+=======
+            this.label1.Location = new System.Drawing.Point(333, 54);
+>>>>>>> 90537ff4885369616888f1889ba1161035426405
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(75, 15);
             this.label1.TabIndex = 0;
@@ -48,8 +54,12 @@
             // 
             // txtPort
             // 
+<<<<<<< HEAD
             this.txtPort.Location = new System.Drawing.Point(148, 58);
             this.txtPort.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+=======
+            this.txtPort.Location = new System.Drawing.Point(399, 54);
+>>>>>>> 90537ff4885369616888f1889ba1161035426405
             this.txtPort.Name = "txtPort";
             this.txtPort.Size = new System.Drawing.Size(135, 25);
             this.txtPort.TabIndex = 1;
@@ -96,11 +106,33 @@
             this.btnStopService.UseVisualStyleBackColor = true;
             this.btnStopService.Click += new System.EventHandler(this.btnStopService_Click);
             // 
+            // txtHost
+            // 
+            this.txtHost.Location = new System.Drawing.Point(111, 45);
+            this.txtHost.Name = "txtHost";
+            this.txtHost.Size = new System.Drawing.Size(102, 21);
+            this.txtHost.TabIndex = 7;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(45, 45);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(47, 12);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "服务器:";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+<<<<<<< HEAD
             this.ClientSize = new System.Drawing.Size(724, 530);
+=======
+            this.ClientSize = new System.Drawing.Size(543, 424);
+            this.Controls.Add(this.txtHost);
+            this.Controls.Add(this.label3);
+>>>>>>> 90537ff4885369616888f1889ba1161035426405
             this.Controls.Add(this.btnStopService);
             this.Controls.Add(this.btnStartService);
             this.Controls.Add(this.txtClientMsg);
@@ -110,6 +142,7 @@
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -123,6 +156,8 @@
         private System.Windows.Forms.TextBox txtClientMsg;
         private System.Windows.Forms.Button btnStartService;
         private System.Windows.Forms.Button btnStopService;
+        private System.Windows.Forms.TextBox txtHost;
+        private System.Windows.Forms.Label label3;
     }
 }
 

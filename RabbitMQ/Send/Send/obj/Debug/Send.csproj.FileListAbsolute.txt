@@ -1,0 +1,1 @@
+E:\Github\SocketDemo\RabbitMQ\Send\Send\bin\Debug\Send.exe.config

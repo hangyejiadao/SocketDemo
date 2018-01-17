@@ -1,0 +1,12 @@
+E:\Net\Abd\Gua\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+E:\Net\Abd\Gua\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+E:\Net\Abd\Gua\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojResolveAssemblyReference.cache
+E:\Net\Abd\Gua\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+E:\Net\Abd\Gua\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.Cache
+E:\Net\Abd\Gua\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+E:\Net\Abd\Gua\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+E:\Net\Abd\Gua\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+E:\Net\Abd\Gua\WindowsFormsApp1\obj\Debug\ShowAndroidModel.Form1.resources
+E:\Net\Abd\Gua\WindowsFormsApp1\obj\Debug\ShowAndroidModel.SetupForm.resources
+E:\FileRecv\Gua\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+E:\FileRecv\Gua\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
