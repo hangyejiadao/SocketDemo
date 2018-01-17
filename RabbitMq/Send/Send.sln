@@ -1,9 +1,14 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27130.2003
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Send", "Send\Send.csproj", "{5C66FC63-40BD-420C-B633-BDC358A4EDD7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Send", "Send\Send.csproj", "{48D12C8A-416E-4924-8640-0EA2EAF24899}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{D59E4AA2-AA39-4B94-8650-9B8F2E4591EF}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\packages.config = .nuget\packages.config
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +16,12 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{5C66FC63-40BD-420C-B633-BDC358A4EDD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5C66FC63-40BD-420C-B633-BDC358A4EDD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5C66FC63-40BD-420C-B633-BDC358A4EDD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5C66FC63-40BD-420C-B633-BDC358A4EDD7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48D12C8A-416E-4924-8640-0EA2EAF24899}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48D12C8A-416E-4924-8640-0EA2EAF24899}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48D12C8A-416E-4924-8640-0EA2EAF24899}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48D12C8A-416E-4924-8640-0EA2EAF24899}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {4EE713C7-FCC3-4FAD-AF6E-AD4D64548D45}
 	EndGlobalSection
 EndGlobal
